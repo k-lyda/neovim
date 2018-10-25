@@ -33,6 +33,11 @@ set copyindent                                    " Copy previous indent on <CR>
 set fillchars+=vert:│                             " Nicer vsplit separator.
 set number                                        " On current line, show
                                                   " absolute line number.
+
+"Python-releated settings
+"
+let g:python3_host_prog = '/Users/konrad/.virtualenvs/neovim/bin/python'
+
 " Deoplete
 " https://github.com/Shougo/deoplete.nvim
 "
