@@ -14,7 +14,7 @@ call pathogen#infect()                            " Initialize Pathogen
 "
 " A theme designed with neovim in mind.
 set background=dark                               " Use dark version of theme.
-colorscheme kalisi                                " Use kalisi color scheme.
+colorscheme codedark                              " Use kalisi color scheme.
 
 " Tweeks
 "
@@ -47,7 +47,6 @@ inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
 " Client for servers providing language support and features.
 let g:LanguageClient_serverCommands = {
     \ 'python': ['~/.local/bin/pyls'],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ }
 nnoremap <leader>jd :call LanguageClient#textDocument_definition()<CR>
 
@@ -82,12 +81,9 @@ autocmd WinEnter *
   \ if !exists('w:created') | call matchadd('WhitespaceEOL', '\s\+$') | endif
 call matchadd('WhitespaceEOL', '\s\+$')
 
-" Highlight Past Column 80
+" Highlight Column 80
 "
-" Change the background color past column 80 to indicate you've typed too
-" much.
-highlight ColorColumn ctermbg=239 guibg=#39393b
-execute "set colorcolumn=" . join(range(81,335), ',')
+set colorcolumn=81
 
 " Embedded Terminal
 "
@@ -109,7 +105,7 @@ endif
 " https://github.com/takac/vim-hardtime
 "
 " Break bad vim patterns, forces you to use better movement keys.
-autocmd VimEnter,BufNewFile,BufReadPost * silent! HardTimeOn
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! HardTimeOn
 nnoremap <leader>h <Esc>:HardTimeToggle<CR>       " Toggle hardtime with <leader>h.
 let g:hardtime_ignore_quickfix = 1                " Disable in quickfix windows.
 let g:hardtime_allow_different_key = 1            " Allow different keys in succession.
@@ -125,7 +121,7 @@ let g:list_of_normal_keys = ["h", "j", "k", "l",
 "
 " Sweet looking status line. Requires powerline fonts to be enabled in your
 " terminal.
-let g:airline_theme='kalisi'                      " Use the kalisi theme!
+let g:airline_theme='codedark'                    " Use the kalisi theme!
 let g:airline_powerline_fonts=1                   " Enable powerline fonts.
 set noshowmode                                    " Don't show mode in command line.
 let g:airline#extensions#tabline#enabled=1        " Show the tabline.

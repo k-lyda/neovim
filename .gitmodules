@@ -73,3 +73,6 @@
 	path = share/bundle/LanguageClient-neovim
 	url = https://github.com/autozimu/LanguageClient-neovim
 	branch = next
+[submodule "share/bundle/vim-code-dark"]
+	path = share/bundle/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark.git
