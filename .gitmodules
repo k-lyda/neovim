@@ -82,3 +82,12 @@
 [submodule "share/bundle/vim-flake8"]
 	path = share/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "share/bundle/vim-surround"]
+	path = share/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "share/bundle/vim-commentary"]
+	path = share/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "share/bundle/vim-repeat"]
+	path = share/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
