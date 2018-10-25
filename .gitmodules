@@ -76,3 +76,9 @@
 [submodule "share/bundle/vim-code-dark"]
 	path = share/bundle/vim-code-dark
 	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule "share/bundle/black"]
+	path = share/bundle/black
+	url = https://github.com/ambv/black.git
+[submodule "share/bundle/vim-flake8"]
+	path = share/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git

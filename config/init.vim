@@ -37,6 +37,9 @@ set number                                        " On current line, show
 "Python-releated settings
 "
 let g:python3_host_prog = '/Users/konrad/.virtualenvs/neovim/bin/python'
+let g:black_virtualenv = '/Users/konrad/.virtualenvs/black'
+
+autocmd BufWritePost *.py call Flake8()           " Run flake8 on save
 
 " Deoplete
 " https://github.com/Shougo/deoplete.nvim
